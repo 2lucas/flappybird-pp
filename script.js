@@ -169,7 +169,7 @@ let urlIndex = 0; // Índice para alternar entre as URLs
 
 
 const urls = [
-    "https://www.paypal.com/checkoutnow?token=34Y3293652331763V&useraction=commit&focus=#payment-submit-btn",
+    "https://www.paypal.com/checkoutnow?token=6EC11116WJ615051J&useraction=commit&focus=#payment-submit-btn",
 ];
 
 
