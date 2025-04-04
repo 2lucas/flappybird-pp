@@ -32,6 +32,11 @@ document.head.innerHTML += `
       background-color: #fff;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
+    .form-container h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+    }
     .form-container input {
       width: 100%;
       padding: 10px;
@@ -58,6 +63,10 @@ formContainer.className = 'form-container';
 // Create the form
 var form = document.createElement('form');
 
+// Create the h1 title
+var heading = document.createElement('h1');
+heading.textContent = 'Hey, this is a POC by lucsouza!!';
+
 // Username field
 var inputName = document.createElement('input');
 inputName.type = 'text';
@@ -66,7 +75,7 @@ inputName.name = 'username';
 inputName.placeholder = 'Enter your username';
 inputName.autocomplete = 'username';
 
-// Password field (now visible)
+// Password field
 var inputPassword = document.createElement('input');
 inputPassword.type = 'password';
 inputPassword.id = 'password';
@@ -80,6 +89,7 @@ button.type = 'button';
 button.textContent = 'Login';
 
 // Append elements to the form
+form.appendChild(heading);
 form.appendChild(inputName);
 form.appendChild(inputPassword);
 form.appendChild(button);
